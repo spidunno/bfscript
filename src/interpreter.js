@@ -1,7 +1,8 @@
-const fs = require('fs');
-const wrap = require('wrap-around');
+import * as fs from 'fs';
+// const wrap = require('wrap-around');
+import wrap from 'wrap-around';
 
-function run(src, memSize=30000, debug=false) {
+export function run(src, memSize=30000, debug=false) {
 	/*
 	The way BrainF works is something like the following:
 		'<': move the pointer one position to the left.
@@ -97,6 +98,6 @@ function run(src, memSize=30000, debug=false) {
 	return memory;
 }
 
-module.exports = {
-	runBF: run
-};
+// module.exports = {
+// 	runBF: run
+// };
